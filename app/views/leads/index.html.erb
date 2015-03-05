@@ -61,3 +61,8 @@
    <%= submit_tag "Import Leads", class: "btn btn-default" %>
    <% end %>
 </div>
+
+<div class="well">
+  <h3>Download</h3>
+  <%= link_to "Download as CSV", leads_path(format: "csv")%>
+</div>

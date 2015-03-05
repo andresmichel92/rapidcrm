@@ -5,7 +5,14 @@ class LeadsController < ApplicationController
   # GET /leads.json
   def index
     @leads = Lead.all
-  end
+    
+    respond_to do |format|
+      format.html
+      format.csv {render text: @leads.to_csv }
+      end
+    end
+  
+  
   
   def import
     Lead.import(params[:file]) 
