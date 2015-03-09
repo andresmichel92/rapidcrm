@@ -42,10 +42,12 @@ gem 'spring',        group: :development
 group :development, :test do
   gem 'rspec-rails','~> 3.0.0'
   gem 'sqlite3'
+   gem 'will_paginate', '~> 3.0'
 end
 
 
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'will_paginate', '~> 3.0'
 end

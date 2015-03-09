@@ -17,13 +17,13 @@
 				<thead>
 					<tr>
 						<th>
-							Name
+              <%= sortable "Name"%>
 						</th>
 						<th>
-							Company
+							 <%= sortable "Company"%>
 						</th>
 						<th>
-							Location
+             <%= sortable "Location"%>
 						</th>
 						<th>
 							Phone
@@ -64,6 +64,7 @@
 		</div>
 	</div>
 </div>
+<%= will_paginate @leads %>
 
 <hr>
 
