@@ -31,9 +31,11 @@
             <th>
 							Date
 						</th>
+            
             <th>
-							
+              
 						</th>
+          
 					</tr>
 				</thead>
 				<tbody>
@@ -54,9 +56,11 @@
             <td>
               <%= lead.date %>
 						</td>
+           <% if current_user %>
             <td>
               <%= link_to 'Edit', edit_lead_path(lead) %>
-            </td>  
+						</td>
+            <% end %> 
 					</tr>
              <% end %>
 				</tbody>
